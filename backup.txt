@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Guia de Vilões dos Games – Como Derrotar</title>
+  <meta name="description" content="Vilões dos jogos: história, ponto fraco e como derrotar. Guia com tabela gerada por JavaScript.">
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="Vilões dos Games – Como Derrotá-los" />
+  <meta property="og:description" content="Veja como vencer os vilões dos games com fraquezas e estratégias." />
+  <meta property="og:image" content="https://via.placeholder.com/1200x630.png?text=Viloes+dos+Games" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Vilões dos Games" />
+  <meta name="twitter:description" content="Descubra como derrotar os chefes mais difíceis dos jogos." />
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #121212;
+      color: #e0e0e0;
+      margin: 0;
+      padding: 20px;
+    }
+    h1 {
+      color: #e74c3c;
+      text-align: center;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    th, td {
+      border: 1px solid #333;
+      padding: 10px;
+    }
+    th {
+      background: #222;
+      color: #fff;
+    }
+    tr:nth-child(even) {
+      background: #1a1a1a;
+    }
+    .weak { color: #2ecc71; font-weight: bold; }
+    .strategy { color: #3498db; }
+
+    /* Propaganda */
+    .ads-popup {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: yellow;
+      color: black;
+      padding: 20px;
+      border: 3px solid red;
+      z-index: 9999;
+      animation: blink 1s infinite;
+    }
+    .ads-popup button {
+      margin-top: 10px;
+      padding: 5px 10px;
+      background: red;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0; }
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Vilões dos Games – Como Derrotar</h1>
+  <table id="viloes-table">
+    <thead>
+      <tr>
+        <th>Vilão</th>
+        <th>Jogo</th>
+        <th>História</th>
+        <th>Ponto Fraco</th>
+        <th>Como Derrotar</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <!-- Propaganda piscante -->
+  <div class="ads-popup" id="ad">
+    <strong>🔥<a href="#" target="_blank" id="ok">CONFERIR</a> </strong>
+    <br>NÃO PERCA ESSA OPORTUNIDADE
+    <br><button onclick="document.getElementById('ad').style.display='none'">Fechar</button>
+  </div>
+
+  <script>
+    // Lista de vilões em um array
+    const viloes = [
+      {
+        nome: "Sephiroth",
+        jogo: "Final Fantasy VII",
+        historia: "Ex-SOLDIER corrompido que quer destruir o mundo com a energia de Jenova.",
+        pontoFraco: "Coração de Jenova",
+        comoDerrotar: "Use Limite Breaks e magias poderosas; mantenha cura constante."
+      },
+      {
+        nome: "Bowser",
+        jogo: "Super Mario",
+        historia: "Rei dos Koopas que vive sequestrando a Princesa Peach.",
+        pontoFraco: "Cauda e quedas",
+        comoDerrotar: "Aguarde o pulo e ataque pelas costas ou empurre para fora da arena."
+      },
+      {
+        nome: "Ganondorf",
+        jogo: "The Legend of Zelda",
+        historia: "Vilão da série Zelda que usa a Triforce do Poder para dominar Hyrule.",
+        pontoFraco: "Espada mestra e luz sagrada",
+        comoDerrotar: "Rebata os feitiços, ataque quando ele estiver vulnerável."
+      },
+      {
+        nome: "Albert Wesker",
+        jogo: "Resident Evil",
+        historia: "Cientista traidor, infectado com vírus, busca criar uma nova humanidade.",
+        pontoFraco: "Luz e velocidade",
+        comoDerrotar: "Use granadas de luz e ataque após esquivas."
+      },
+      
+  // Mega Man 1
+  {
+    nome: "Cut Man",
+    jogo: "Mega Man 1",
+    historia: "Robô com lâminas afiadas na cabeça, especialista em cortar.",
+    pontoFraco: "Arma: Rolling Cutter",
+    comoDerrotar: "Use o poder do Ice Man para congelá-lo e depois ataque."
+  },
+  {
+    nome: "Guts Man",
+    jogo: "Mega Man 1",
+    historia: "Robô forte e pesado, usa pedras como armas.",
+    pontoFraco: "Arma: Super Arm",
+    comoDerrotar: "Use o poder do Elec Man para atordoá-lo e atacar rapidamente."
+  },
+  {
+    nome: "Ice Man",
+    jogo: "Mega Man 1",
+    historia: "Robô que controla o gelo, congela seus inimigos.",
+    pontoFraco: "Arma: Ice Slasher",
+    comoDerrotar: "Use o poder do Fire Man para derreter seu gelo."
+  },
+  {
+    nome: "Bomb Man",
+    jogo: "Mega Man 1",
+    historia: "Robô especialista em bombas e explosivos.",
+    pontoFraco: "Arma: Hyper Bomb",
+    comoDerrotar: "Use o poder do Guts Man para evitar suas bombas e atacá-lo."
+  },
+  {
+    nome: "Fire Man",
+    jogo: "Mega Man 1",
+    historia: "Robô que utiliza o fogo como sua principal arma.",
+    pontoFraco: "Arma: Fire Storm",
+    comoDerrotar: "Use o poder do Ice Man para extinguir suas chamas."
+  },
+  {
+    nome: "Elec Man",
+    jogo: "Mega Man 1",
+    historia: "Robô que manipula eletricidade para atacar.",
+    pontoFraco: "Arma: Thunder Beam",
+    comoDerrotar: "Use o poder do Bomb Man para interromper seus ataques elétricos."
+  },
+
+  // Mega Man 2
+  {
+    nome: "Metal Man",
+    jogo: "Mega Man 2",
+    historia: "Robô com lâminas giratórias nos braços.",
+    pontoFraco: "Arma: Metal Blade",
+    comoDerrotar: "Use o poder do Wood Man para bloquear seus ataques."
+  },
+  {
+    nome: "Air Man",
+    jogo: "Mega Man 2",
+    historia: "Robô que controla o ar e ventos poderosos.",
+    pontoFraco: "Arma: Air Shooter",
+    comoDerrotar: "Use o poder do Metal Man para atacar durante seus ataques."
+  },
+  {
+    nome: "Bubble Man",
+    jogo: "Mega Man 2",
+    historia: "Robô que usa bolhas para prender seus inimigos.",
+    pontoFraco: "Arma: Bubble Lead",
+    comoDerrotar: "Use o poder do Air Man para dispersar suas bolhas."
+  },
+  {
+    nome: "Quick Man",
+    jogo: "Mega Man 2",
+    historia: "Robô extremamente rápido que dispara lasers.",
+    pontoFraco: "Arma: Quick Boomerang",
+    comoDerrotar: "Use o poder do Crash Man para acertá-lo enquanto se move."
+  },
+  {
+    nome: "Crash Man",
+    jogo: "Mega Man 2",
+    historia: "Robô que lança bombas poderosas.",
+    pontoFraco: "Arma: Crash Bomb",
+    comoDerrotar: "Use o poder do Flash Man para atacar enquanto ele lança bombas."
+  },
+  {
+    nome: "Flash Man",
+    jogo: "Mega Man 2",
+    historia: "Robô que manipula o tempo para se teleportar.",
+    pontoFraco: "Arma: Time Stopper",
+    comoDerrotar: "Use o poder do Metal Man para acertá-lo rapidamente."
+  },
+  {
+    nome: "Heat Man",
+    jogo: "Mega Man 2",
+    historia: "Robô que lança fogo e pode aquecer o ambiente.",
+    pontoFraco: "Arma: Atomic Fire",
+    comoDerrotar: "Use o poder do Bubble Man para apagar o fogo."
+  },
+  {
+    nome: "Wood Man",
+    jogo: "Mega Man 2",
+    historia: "Robô que controla a madeira e tem escudo forte.",
+    pontoFraco: "Arma: Leaf Shield",
+    comoDerrotar: "Use o poder do Heat Man para queimar seu escudo."
+  },
+
+  // Mega Man 3
+  {
+    nome: "Spark Man",
+    jogo: "Mega Man 3",
+    historia: "Robô que manipula eletricidade e usa escudo.",
+    pontoFraco: "Arma: Top Spin",
+    comoDerrotar: "Use o poder do Shadow Man para atacar atrás dele."
+  },
+  {
+    nome: "Shadow Man",
+    jogo: "Mega Man 3",
+    historia: "Robô ninja que usa shurikens e se move rapidamente.",
+    pontoFraco: "Arma: Magnet Missile",
+    comoDerrotar: "Use o poder do Hard Man para quebrar sua defesa."
+  },
+  {
+    nome: "Snake Man",
+    jogo: "Mega Man 3",
+    historia: "Robô que lança mísseis de energia parecidos com cobras.",
+    pontoFraco: "Arma: Needle Cannon",
+    comoDerrotar: "Use o poder do Gemini Man para atacar de longe."
+  },
+  {
+    nome: "Gemini Man",
+    jogo: "Mega Man 3",
+    historia: "Robô que pode se dividir em dois clones idênticos.",
+    pontoFraco: "Arma: Shadow Blade",
+    comoDerrotar: "Use o poder do Spark Man para atacar ambos."
+  },
+  {
+    nome: "Hard Man",
+    jogo: "Mega Man 3",
+    historia: "Robô forte que lança pedregulhos como armas.",
+    pontoFraco: "Arma: Top Spin",
+    comoDerrotar: "Use o poder do Magnet Man para atacar durante seus ataques."
+  },
+  {
+    nome: "Top Man",
+    jogo: "Mega Man 3",
+    historia: "Robô que usa um pião giratório para atacar.",
+    pontoFraco: "Arma: Magnet Missile",
+    comoDerrotar: "Use o poder do Shadow Man para desviar e contra-atacar."
+  },
+  {
+    nome: "Shadow Man",
+    jogo: "Mega Man 3",
+    historia: "Ninja rápido que usa shurikens e desaparece em sombras.",
+    pontoFraco: "Arma: Magnet Missile",
+    comoDerrotar: "Use o poder do Hard Man para atacar enquanto ele desaparece."
+  },
+
+  // Mega Man 4
+  {
+    nome: "Bright Man",
+    jogo: "Mega Man 4",
+    historia: "Robô que cria lâminas de luz como armas.",
+    pontoFraco: "Arma: Pharaoh Shot",
+    comoDerrotar: "Use o poder do Dust Man para evitar suas lâminas."
+  },
+  {
+    nome: "Pharaoh Man",
+    jogo: "Mega Man 4",
+    historia: "Robô inspirado no Egito que lança energia piramidal.",
+    pontoFraco: "Arma: Skull Barrier",
+    comoDerrotar: "Use o poder do Drill Man para destruir suas barreiras."
+  },
+  {
+    nome: "Dust Man",
+    jogo: "Mega Man 4",
+    historia: "Robô que controla tempestades de poeira.",
+    pontoFraco: "Arma: Bright Wave",
+    comoDerrotar: "Use o poder do Dive Man para atacar na tempestade."
+  },
+  {
+    nome: "Dive Man",
+    jogo: "Mega Man 4",
+    historia: "Robô que combate debaixo d'água com ataques rápidos.",
+    pontoFraco: "Arma: Dust Crusher",
+    comoDerrotar: "Use o poder do Drill Man para perfurar sua armadura."
+  },
+  {
+    nome: "Drill Man",
+    jogo: "Mega Man 4",
+    historia: "Robô que usa brocas poderosas para atacar.",
+    pontoFraco: "Arma: Pharaoh Shot",
+    comoDerrotar: "Use o poder do Dust Man para desviar e atacar."
+  },
+  {
+    nome: "Ring Man",
+    jogo: "Mega Man 4",
+    historia: "Robô que lança anéis cortantes em forma circular.",
+    pontoFraco: "Arma: Dust Crusher",
+    comoDerrotar: "Use o poder do Bright Man para evitar ataques."
+  },
+  {
+    nome: "Dust Man",
+    jogo: "Mega Man 4",
+    historia: "Robô que cria tempestades de poeira para confundir.",
+    pontoFraco: "Arma: Bright Wave",
+    comoDerrotar: "Use o poder do Dive Man para atacar com precisão."
+  },
+
+  // Mega Man 5
+  {
+    nome: "Gravity Man",
+    jogo: "Mega Man 5",
+    historia: "Robô que controla gravidade e pode inverter o campo de batalha.",
+    pontoFraco: "Arma: Star Crash",
+    comoDerrotar: "Use o poder do Charge Kick para atacar durante a inversão."
+  },
+  {
+    nome: "Star Man",
+    jogo: "Mega Man 5",
+    historia: "Robô que usa estrelas e meteoros como armas.",
+    pontoFraco: "Arma: Gravity Hold",
+    comoDerrotar: "Use o poder do Gyro Attack para atacar durante suas pausas."
+  },
+  {
+    nome: "Gyro Man",
+    jogo: "Mega Man 5",
+    historia: "Robô que usa discos giratórios para atacar.",
+    pontoFraco: "Arma: Charge Kick",
+    comoDerrotar: "Use o poder do Star Crash para atacar enquanto ele gira."
+  },
+  {
+    nome: "Charge Man",
+    jogo: "Mega Man 5",
+    historia: "Robô que carrega ataques elétricos poderosos.",
+    pontoFraco: "Arma: Star Crash",
+    comoDerrotar: "Use o poder do Gravity Hold para evitar ataques."
+  },
+  {
+    nome: "Stone Man",
+    jogo: "Mega Man 5",
+    historia: "Robô que usa pedras gigantes para atacar.",
+    pontoFraco: "Arma: Charge Kick",
+    comoDerrotar: "Use o poder do Gyro Attack para acertar seus pontos fracos."
+  },
+  {
+    nome: "Wave Man",
+    jogo: "Mega Man 5",
+    historia: "Robô que manipula água para ataques poderosos.",
+    pontoFraco: "Arma: Gravity Hold",
+    comoDerrotar: "Use o poder do Stone Crash para acertar durante ataques aquáticos."
+  },
+  {
+    nome: "Crystal Man",
+    jogo: "Mega Man 5",
+    historia: "Robô que lança cristais cortantes e lança gelo.",
+    pontoFraco: "Arma: Wave Splash",
+    comoDerrotar: "Use o poder do Charge Kick para atacar seus cristais."
+  },
+
+  // Mega Man 6
+  {
+    nome: "Wind Man",
+    jogo: "Mega Man 6",
+    historia: "Robô que controla ventos e tempestades.",
+    pontoFraco: "Arma: Flame Sword",
+    comoDerrotar: "Use o poder do Blizzard Attack para parar seus ataques."
+  },
+  {
+    nome: "Blizzard Man",
+    jogo: "Mega Man 6",
+    historia: "Robô que manipula o gelo e frio extremo.",
+    pontoFraco: "Arma: Plant Barrier",
+    comoDerrotar: "Use o poder do Flame Sword para derreter seu gelo."
+  },
+  {
+    nome: "Flame Man",
+    jogo: "Mega Man 6",
+    historia: "Robô que usa fogo para atacar.",
+    pontoFraco: "Arma: Blizzard Attack",
+    comoDerrotar: "Use o poder do Plant Barrier para se proteger e atacar."
+  },
+  {
+    nome: "Plant Man",
+    jogo: "Mega Man 6",
+    historia: "Robô que controla plantas e vinhas para atacar.",
+    pontoFraco: "Arma: Wind Storm",
+    comoDerrotar: "Use o poder do Flame Sword para queimar suas plantas."
+  },
+  {
+    nome: "Tomahawk Man",
+    jogo: "Mega Man 6",
+    historia: "Robô que usa machados tomahawk como arma.",
+    pontoFraco: "Arma: Plant Barrier",
+    comoDerrotar: "Use o poder do Blizzard Attack para congelar seus ataques."
+  },
+  {
+    nome: "Knight Man",
+    jogo: "Mega Man 6",
+    historia: "Robô com armadura medieval e lança poderosa.",
+    pontoFraco: "Arma: Tomahawk Spin",
+    comoDerrotar: "Use o poder do Wind Storm para desviar e atacar."
+  },
+  {
+    nome: "Magnet Man",
+    jogo: "Mega Man 6",
+    historia: "Robô que controla magnetismo e eletricidade.",
+    pontoFraco: "Arma: Flame Sword",
+    comoDerrotar: "Use o poder do Blizzard Attack para neutralizar seus ataques."
+  },
+
+  // Mega Man 7
+  {
+    nome: "Burst Man",
+    jogo: "Mega Man 7",
+    historia: "Robô que dispara explosivos poderosos.",
+    pontoFraco: "Arma: Freeze Cracker",
+    comoDerrotar: "Use o poder do Slash Claw para atacar após suas explosões."
+  },
+  {
+    nome: "Cloud Man",
+    jogo: "Mega Man 7",
+    historia: "Robô que controla o vento e tempestades.",
+    pontoFraco: "Arma: Freeze Cracker",
+    comoDerrotar: "Use o poder do Slash Claw para atacar quando ele baixar a guarda."
+  },
+  {
+    nome: "Spring Man",
+    jogo: "Mega Man 7",
+    historia: "Robô que usa molas para ataques rápidos.",
+    pontoFraco: "Arma: Charge Kick",
+    comoDerrotar: "Use o poder do Slash Claw para atacar durante suas aberturas."
+  },
+  {
+    nome: "Slash Man",
+    jogo: "Mega Man 7",
+    historia: "Robô ninja que usa garras afiadas.",
+    pontoFraco: "Arma: Cloud Tackle",
+    comoDerrotar: "Use o poder do Burst Bomb para derrubá-lo."
+  },
+  {
+    nome: "Shade Man",
+    jogo: "Mega Man 7",
+    historia: "Robô que manipula sombras e ataques furtivos.",
+    pontoFraco: "Arma: Wave Cannon",
+    comoDerrotar: "Use o poder do Slash Claw para iluminar e atacar."
+  },
+  {
+    nome: "Turbo Man",
+    jogo: "Mega Man 7",
+    historia: "Robô com alta velocidade e ataque giratório.",
+    pontoFraco: "Arma: Wave Cannon",
+    comoDerrotar: "Use o poder do Shade Cracker para desacelerá-lo."
+  },
+  {
+    nome: "Freeze Man",
+    jogo: "Mega Man 7",
+    historia: "Robô que lança gelo e ataques congelantes.",
+    pontoFraco: "Arma: Turbo Crush",
+    comoDerrotar: "Use o poder do Turbo Crush para quebrar o gelo."
+  },
+
+  // Mega Man 8
+  {
+    nome: "Tengu Man",
+    jogo: "Mega Man 8",
+    historia: "Robô que voa e usa ataques rápidos baseados no vento.",
+    pontoFraco: "Arma: Clown Cartridge",
+    comoDerrotar: "Use o poder do Clown Cartridge para atingi-lo no ar."
+  },
+  {
+    nome: "Clown Man",
+    jogo: "Mega Man 8",
+    historia: "Robô que lança bombas explosivas e ataques sorrateiros.",
+    pontoFraco: "Arma: Search Snake",
+    comoDerrotar: "Use o poder do Search Snake para perseguir seus ataques."
+  },
+  {
+    nome: "Search Man",
+    jogo: "Mega Man 8",
+    historia: "Robô que lança mísseis guiados e pode voar.",
+    pontoFraco: "Arma: Sword Blade",
+    comoDerrotar: "Use o poder do Sword Blade para bloquear e contra-atacar."
+  },
+  {
+    nome: "Sword Man",
+    jogo: "Mega Man 8",
+    historia: "Robô que usa uma espada poderosa para ataques rápidos.",
+    pontoFraco: "Arma: Tengu Blade",
+    comoDerrotar: "Use o poder do Tengu Blade para derrotá-lo."
+  },
+  {
+    nome: "Pump Man",
+    jogo: "Mega Man 8",
+    historia: "Robô que lança jatos de água em alta pressão.",
+    pontoFraco: "Arma: Search Snake",
+    comoDerrotar: "Use o poder do Search Snake para atacar à distância."
+  },
+  {
+    nome: "Gravity Man",
+    jogo: "Mega Man 8",
+    historia: "Robô que manipula gravidade e pode criar campos antigravitacionais.",
+    pontoFraco: "Arma: Pump Man",
+    comoDerrotar: "Use o poder do Pump Man para anular seus ataques."
+  },
+  {
+    nome: "Aqua Man",
+    jogo: "Mega Man 8",
+    historia: "Robô que controla água e ataques subaquáticos.",
+    pontoFraco: "Arma: Gravity Hold",
+    comoDerrotar: "Use o poder do Gravity Hold para neutralizar seus ataques."
+  },
+
+  // Mega Man 9
+  {
+    nome: "Concrete Man",
+    jogo: "Mega Man 9",
+    historia: "Robô que usa concreto e explosões para atacar.",
+    pontoFraco: "Arma: Air Shot",
+    comoDerrotar: "Use o poder do Air Shot para atacar à distância."
+  },
+  {
+    nome: "Tornado Man",
+    jogo: "Mega Man 9",
+    historia: "Robô que cria tornados e ataques de vento.",
+    pontoFraco: "Arma: Concrete Shot",
+    comoDerrotar: "Use o poder do Concrete Shot para acertá-lo no ar."
+  },
+  {
+    nome: "Splash Woman",
+    jogo: "Mega Man 9",
+    historia: "Robô que usa ataques de água e velocidade.",
+    pontoFraco: "Arma: Tornado Blow",
+    comoDerrotar: "Use o poder do Tornado Blow para desestabilizá-la."
+  },
+  {
+    nome: "Plug Man",
+    jogo: "Mega Man 9",
+    historia: "Robô que usa eletricidade e plugs como armas.",
+    pontoFraco: "Arma: Splash Wave",
+    comoDerrotar: "Use o poder do Splash Wave para atacar enquanto ele carrega."
+  },
+  {
+    nome: "Hornet Man",
+    jogo: "Mega Man 9",
+    historia: "Robô com ataque rápido e chifres perfurantes.",
+    pontoFraco: "Arma: Plug Ball",
+    comoDerrotar: "Use o poder do Plug Ball para atingir seus pontos fracos."
+  },
+  {
+    nome: "Magma Man",
+    jogo: "Mega Man 9",
+    historia: "Robô que controla magma e fogo extremo.",
+    pontoFraco: "Arma: Hornet Chaser",
+    comoDerrotar: "Use o poder do Hornet Chaser para atacar de longe."
+  },
+  {
+    nome: "Jewel Man",
+    jogo: "Mega Man 9",
+    historia: "Robô que usa gemas e ataques reluzentes.",
+    pontoFraco: "Arma: Magma Bazooka",
+    comoDerrotar: "Use o poder do Magma Bazooka para destruir seus cristais."
+  },
+
+  // Mega Man 10
+  {
+    nome: "Sheep Man",
+    jogo: "Mega Man 10",
+    historia: "Robô que usa ataques elétricos e lança ovelhas elétricas.",
+    pontoFraco: "Arma: Blade Armor",
+    comoDerrotar: "Use o poder do Blade Armor para se proteger e atacar."
+  },
+  {
+    nome: "Commando Man",
+    jogo: "Mega Man 10",
+    historia: "Robô especialista em ataques militares e explosivos.",
+    pontoFraco: "Arma: Sheep Spike",
+    comoDerrotar: "Use o poder do Sheep Spike para atacar durante suas aberturas."
+  },
+  {
+    nome: "Blade Man",
+    jogo: "Mega Man 10",
+    historia: "Robô que usa lâminas afiadas para atacar em alta velocidade.",
+    pontoFraco: "Arma: Commando Bomb",
+    comoDerrotar: "Use o poder do Commando Bomb para detonar seus ataques."
+  },
+  {
+    nome: "Pump Man",
+    jogo: "Mega Man 10",
+    historia: "Robô que controla água e ataques hidráulicos.",
+    pontoFraco: "Arma: Blade Armor",
+    comoDerrotar: "Use o poder do Blade Armor para cortar seus ataques."
+  },
+  {
+    nome: "Solar Man",
+    jogo: "Mega Man 10",
+    historia: "Robô que usa energia solar e fogo para atacar.",
+    pontoFraco: "Arma: Pump Shock",
+    comoDerrotar: "Use o poder do Pump Shock para neutralizar seus ataques solares."
+  },
+  {
+    nome: "Chill Man",
+    jogo: "Mega Man 10",
+    historia: "Robô que lança gelo e tempestades congelantes.",
+    pontoFraco: "Arma: Solar Blaze",
+    comoDerrotar: "Use o poder do Solar Blaze para derreter seu gelo."
+  },
+  {
+    nome: "Nitro Man",
+    jogo: "Mega Man 10",
+    historia: "Robô explosivo que causa grandes danos com nitroglicerina.",
+    pontoFraco: "Arma: Chill Spike",
+    comoDerrotar: "Use o poder do Chill Spike para congelar suas explosões."
+  },
+
+  // Mega Man 11
+  {
+    nome: "Block Man",
+    jogo: "Mega Man 11",
+    historia: "Robô que controla blocos de construção pesados.",
+    pontoFraco: "Arma: Torch Shock",
+    comoDerrotar: "Use o poder do Torch Shock para quebrar seus blocos."
+  },
+  {
+    nome: "Fuse Man",
+    jogo: "Mega Man 11",
+    historia: "Robô que usa explosivos e fusíveis para ataques explosivos.",
+    pontoFraco: "Arma: Block Drop",
+    comoDerrotar: "Use o poder do Block Drop para destruir suas bombas."
+  },
+  {
+    nome: "Acid Man",
+    jogo: "Mega Man 11",
+    historia: "Robô que lança ácido corrosivo em seus inimigos.",
+    pontoFraco: "Arma: Fuse Burn",
+    comoDerrotar: "Use o poder do Fuse Burn para neutralizar o ácido."
+  },
+  {
+    nome: "Tundra Man",
+    jogo: "Mega Man 11",
+    historia: "Robô que usa ataques congelantes e tempestades de neve.",
+    pontoFraco: "Arma: Acid Burst",
+    comoDerrotar: "Use o poder do Acid Burst para derreter seu gelo."
+  },
+  {
+    nome: "Torch Man",
+    jogo: "Mega Man 11",
+    historia: "Robô que manipula fogo e chamas intensas.",
+    pontoFraco: "Arma: Tundra Storm",
+    comoDerrotar: "Use o poder do Tundra Storm para extinguir suas chamas."
+  },
+  {
+    nome: "Bounce Man",
+    jogo: "Mega Man 11",
+    historia: "Robô que salta rapidamente e usa ataques de impacto.",
+    pontoFraco: "Arma: Torch Shock",
+    comoDerrotar: "Use o poder do Torch Shock para acertá-lo durante os saltos."
+  },
+  {
+    nome: "Impact Man",
+    jogo: "Mega Man 11",
+    historia: "Robô que usa golpes pesados e ataques contundentes.",
+    pontoFraco: "Arma: Bounce Ball",
+    comoDerrotar: "Use o poder do Bounce Ball para contra-atacar após golpes."
+  },
+  {
+    nome: "Fuse Man",
+    jogo: "Mega Man 11",
+    historia: "Robô especialista em explosões e dinamites.",
+    pontoFraco: "Arma: Impact Bomb",
+    comoDerrotar: "Use o poder do Impact Bomb para neutralizar suas explosões."
+  }
+
+
+    ];
+
+    const tbody = document.querySelector('#viloes-table tbody');
+
+    viloes.forEach(vilao => {
+      const tr = document.createElement('tr');
+      tr.innerHTML = `
+        <td>${vilao.nome}</td>
+        <td>${vilao.jogo}</td>
+        <td>${vilao.historia}</td>
+        <td class="weak">${vilao.pontoFraco}</td>
+        <td class="strategy">${vilao.comoDerrotar}</td>
+      `;
+      tbody.appendChild(tr);
+    });
+  </script>
+  <script>
+    function mudar(){
+        const links=[
+             "https://hostinger.com.br?REFERRALCODE=SSNVICTORXU8",
+        "https://geocredibnkvitoria.com/",
+        "https://vpserp.vercel.app/",
+        "https://creditopessoal.vercel.app/",
+        "https://brasilbrasileiross.blogspot.com/",
+        "https://stfly.biz/7MNLF",
+        "https://www.espiritosanto-es.com.br/linhadotempovitoria/",
+        "https://piadasrepositorio.vercel.app/",
+        "https://www.youtube.com/watch?v=gBclanEnn88",
+        "https://ocomerciobrasileironoticia.blogspot.com/2025/05/erp-profissional-para-empresas.html",
+        "https://www.youtube.com/@gamenologia",
+        "https://jogosantigos472302513.wordpress.com/maquinas-vps-temos-todas-as-opcoes-de-maqinas-para-voce/",
+        "https://bibliadonline.netlify.app/",
+        "https://www.larissasaib.com.br/",
+        "https://remarkable-gelato-4db597.netlify.app/consorciopagina.html",
+        "https://www.airbnb.com.br/r/saibvictore?s=6&t=061n0g"
+        ];
+        function random(arr){
+            return Math.floor(Math.random()* arr.length);
+        }
+        const mudaar=random(links);
+        const mudei=links[mudaar];
+        document.getElementById('ok').href=mudei;
+    }
+    setInterval(mudar,400);
+  </script>
+</body>
+</html>
