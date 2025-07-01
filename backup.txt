@@ -693,7 +693,438 @@
     historia: "Robô especialista em explosões e dinamites.",
     pontoFraco: "Arma: Impact Bomb",
     comoDerrotar: "Use o poder do Impact Bomb para neutralizar suas explosões."
+  },
+  
+  // Mega Man X (1993)
+  {
+    nome: "Chill Penguin",
+    jogo: "Mega Man X",
+    historia: "Um Maverick de gelo que usa ataques congelantes.",
+    pontoFraco: "Arma: Rolling Shield",
+    comoDerrotar: "Use o Rolling Shield para atacar seu ponto fraco."
+  },
+  {
+    nome: "Storm Eagle",
+    jogo: "Mega Man X",
+    historia: "Maverick que pilota um avião de combate e ataca com vento.",
+    pontoFraco: "Arma: Shotgun Ice",
+    comoDerrotar: "Use o Shotgun Ice para congelar e derrotá-lo."
+  },
+  {
+    nome: "Flame Mammoth",
+    jogo: "Mega Man X",
+    historia: "Maverick que usa ataques de fogo e força bruta.",
+    pontoFraco: "Arma: Electric Spark",
+    comoDerrotar: "Use o Electric Spark para paralisá-lo."
+  },
+  {
+    nome: "Spark Mandrill",
+    jogo: "Mega Man X",
+    historia: "Maverick elétrico que ataca com choque e velocidade.",
+    pontoFraco: "Arma: Rolling Shield",
+    comoDerrotar: "Use o Rolling Shield para neutralizar seus ataques."
+  },
+  {
+    nome: "Armored Armadillo",
+    jogo: "Mega Man X",
+    historia: "Maverick blindado que usa ataques de carga e escudo.",
+    pontoFraco: "Arma: Fire Wave",
+    comoDerrotar: "Use o Fire Wave para penetrar sua armadura."
+  },
+  {
+    nome: "Launch Octopus",
+    jogo: "Mega Man X",
+    historia: "Maverick aquático que dispara torpedos e jatos d’água.",
+    pontoFraco: "Arma: Homing Torpedo",
+    comoDerrotar: "Use o Homing Torpedo para persegui-lo."
+  },
+  {
+    nome: "Boomer Kuwanger",
+    jogo: "Mega Man X",
+    historia: "Maverick ninja com ataque rápido e lâminas afiadas.",
+    pontoFraco: "Arma: Shotgun Ice",
+    comoDerrotar: "Use o Shotgun Ice para congelar e atacar."
+  },
+  {
+    nome: "Sting Chameleon",
+    jogo: "Mega Man X",
+    historia: "Maverick que usa camuflagem e ataques de cauda.",
+    pontoFraco: "Arma: Rolling Shield",
+    comoDerrotar: "Use o Rolling Shield para atacar suas costas."
+  },
+  {
+    nome: "Sigma",
+    jogo: "Mega Man X",
+    historia: "Ex-líder dos Mavericks e principal vilão da série.",
+    pontoFraco: "Uso das armas dos Mavericks derrotados",
+    comoDerrotar: "Use todas as armas que você adquiriu para vencê-lo."
+  },
+
+  // Mega Man X2 (1994)
+  {
+    nome: "Wire Sponge",
+    jogo: "Mega Man X2",
+    historia: "Maverick que usa ataques de eletricidade e fios.",
+    pontoFraco: "Arma: Magna Charge",
+    comoDerrotar: "Use o Magna Charge para atingi-lo à distância."
+  },
+  {
+    nome: "Wheel Gator",
+    jogo: "Mega Man X2",
+    historia: "Maverick que ataca com rodas e chutes giratórios.",
+    pontoFraco: "Arma: Double Cyclone",
+    comoDerrotar: "Use o Double Cyclone para atacar em movimento."
+  },
+  {
+    nome: "Morph Moth",
+    jogo: "Mega Man X2",
+    historia: "Maverick voador que lança ataques com pó tóxico.",
+    pontoFraco: "Arma: Crush Crawfish",
+    comoDerrotar: "Use o Crush Crawfish para atacá-lo no ar."
+  },
+  {
+    nome: "Magna Centipede",
+    jogo: "Mega Man X2",
+    historia: "Maverick que utiliza ataques com segmentos múltiplos.",
+    pontoFraco: "Arma: Wire Sponge",
+    comoDerrotar: "Use o Wire Sponge para atingir seu corpo."
+  },
+  {
+    nome: "Crystal Snail",
+    jogo: "Mega Man X2",
+    historia: "Maverick que lança ataques de cristais e gelo.",
+    pontoFraco: "Arma: Strike Chain",
+    comoDerrotar: "Use o Strike Chain para atacar enquanto ele está vulnerável."
+  },
+  {
+    nome: "Blast Hornet",
+    jogo: "Mega Man X2",
+    historia: "Maverick rápido que ataca com ferrões explosivos.",
+    pontoFraco: "Arma: Crystal Hunter",
+    comoDerrotar: "Use o Crystal Hunter para atacá-lo rapidamente."
+  },
+  {
+    nome: "Magna Charge",
+    jogo: "Mega Man X2",
+    historia: "Maverick que lança cargas elétricas e ataques rápidos.",
+    pontoFraco: "Arma: Crystal Hunter",
+    comoDerrotar: "Use o Crystal Hunter para neutralizar seus ataques."
+  },
+  {
+    nome: "Slash Beast",
+    jogo: "Mega Man X2",
+    historia: "Maverick que usa ataques rápidos e lâminas afiadas.",
+    pontoFraco: "Arma: Magna Charge",
+    comoDerrotar: "Use o Magna Charge para atacar suas aberturas."
+  },
+
+  // Mega Man X3 (1995)
+  {
+    nome: "Shadow Armor X",
+    jogo: "Mega Man X3",
+    historia: "Versão alternativa de X com armadura especial.",
+    pontoFraco: "Ponto fraco variado",
+    comoDerrotar: "Use as armas obtidas contra outros Mavericks."
+  },
+  {
+    nome: "Spark Mandrill",
+    jogo: "Mega Man X3",
+    historia: "Versão atualizada do Maverick elétrico.",
+    pontoFraco: "Arma: Magnet Mine",
+    comoDerrotar: "Use o Magnet Mine para paralisá-lo."
+  },
+  {
+    nome: "Volt Catfish",
+    jogo: "Mega Man X3",
+    historia: "Maverick aquático que usa ataques elétricos.",
+    pontoFraco: "Arma: Double Fang",
+    comoDerrotar: "Use o Double Fang para atacar de longe."
+  },
+  {
+    nome: "Chill Penguin",
+    jogo: "Mega Man X3",
+    historia: "Versão atualizada do Maverick de gelo.",
+    pontoFraco: "Arma: Double Fang",
+    comoDerrotar: "Use o Double Fang para congelá-lo."
+  },
+  {
+    nome: "Storm Owl",
+    jogo: "Mega Man X3",
+    historia: "Maverick que ataca com ventos fortes e ataques aéreos.",
+    pontoFraco: "Arma: Magnet Mine",
+    comoDerrotar: "Use o Magnet Mine para desestabilizá-lo."
+  },
+  {
+    nome: "Launch Octopus",
+    jogo: "Mega Man X3",
+    historia: "Versão atualizada do Maverick aquático.",
+    pontoFraco: "Arma: Twin Slasher",
+    comoDerrotar: "Use o Twin Slasher para atacar."
+  },
+  {
+    nome: "Boomer Kuwanger",
+    jogo: "Mega Man X3",
+    historia: "Versão atualizada do Maverick ninja.",
+    pontoFraco: "Arma: Twin Slasher",
+    comoDerrotar: "Use o Twin Slasher para contra-atacar."
+  },
+  {
+    nome: "Magma Dragoon",
+    jogo: "Mega Man X3",
+    historia: "Maverick dragão que usa ataques de fogo e furacões.",
+    pontoFraco: "Arma: Shadow Armor X",
+    comoDerrotar: "Use a armadura Shadow para pará-lo."
+  },
+
+  // Mega Man X4 (1997)
+  {
+    nome: "Web Spider",
+    jogo: "Mega Man X4",
+    historia: "Maverick que usa ataques com teias e agilidade.",
+    pontoFraco: "Arma: Cyber Peacock",
+    comoDerrotar: "Use o Cyber Peacock para atacar sua teia."
+  },
+  {
+    nome: "Cyber Peacock",
+    jogo: "Mega Man X4",
+    historia: "Maverick que lança penas explosivas coloridas.",
+    pontoFraco: "Arma: Split Mushroom",
+    comoDerrotar: "Use o Split Mushroom para contra-atacar."
+  },
+  {
+    nome: "Split Mushroom",
+    jogo: "Mega Man X4",
+    historia: "Maverick que cria fungos explosivos.",
+    pontoFraco: "Arma: Jet Sting",
+    comoDerrotar: "Use o Jet Sting para destruir seus fungos."
+  },
+  {
+    nome: "Jet Stingray",
+    jogo: "Mega Man X4",
+    historia: "Maverick aquático que lança ataques rápidos.",
+    pontoFraco: "Arma: Split Mushroom",
+    comoDerrotar: "Use o Split Mushroom para contra-atacar."
+  },
+  {
+    nome: "Boomer Kuwanger",
+    jogo: "Mega Man X4",
+    historia: "Versão atualizada do Maverick ninja.",
+    pontoFraco: "Arma: Cyber Peacock",
+    comoDerrotar: "Use o Cyber Peacock para parar seus ataques."
+  },
+  {
+    nome: "Sting Chameleon",
+    jogo: "Mega Man X4",
+    historia: "Versão atualizada do Maverick camaleão.",
+    pontoFraco: "Arma: Jet Stingray",
+    comoDerrotar: "Use o Jet Stingray para neutralizar suas defesas."
+  },
+  {
+    nome: "Storm Owl",
+    jogo: "Mega Man X4",
+    historia: "Versão atualizada do Maverick de vento.",
+    pontoFraco: "Arma: Split Mushroom",
+    comoDerrotar: "Use o Split Mushroom para atacá-lo."
+  },
+  {
+    nome: "Slash Beast",
+    jogo: "Mega Man X4",
+    historia: "Versão atualizada do Maverick com lâminas.",
+    pontoFraco: "Arma: Cyber Peacock",
+    comoDerrotar: "Use o Cyber Peacock para atacar."
+  },
+
+  // Mega Man X5 (2000)
+  {
+    nome: "Grizzly Slash",
+    jogo: "Mega Man X5",
+    historia: "Maverick com garras poderosas e ataques rápidos.",
+    pontoFraco: "Arma: Dark Dizzy",
+    comoDerrotar: "Use o Dark Dizzy para atacar suas aberturas."
+  },
+  {
+    nome: "Dark Dizzy",
+    jogo: "Mega Man X5",
+    historia: "Maverick que usa ataques elétricos e voo rápido.",
+    pontoFraco: "Arma: Grizzly Slash",
+    comoDerrotar: "Use o Grizzly Slash para contra-atacar."
+  },
+  {
+    nome: "Model 2",
+    jogo: "Mega Man X5",
+    historia: "Versão avançada de Zero com habilidades melhoradas.",
+    pontoFraco: "Uso de armas especiais",
+    comoDerrotar: "Use armas especiais para vencer."
+  },
+  {
+    nome: "Duff McWhalen",
+    jogo: "Mega Man X5",
+    historia: "Maverick aquático com ataques poderosos.",
+    pontoFraco: "Arma: Model 2",
+    comoDerrotar: "Use o Model 2 para atacar a distância."
+  },
+  {
+    nome: "Gravity Antonion",
+    jogo: "Mega Man X5",
+    historia: "Maverick que manipula gravidade.",
+    pontoFraco: "Arma: Duff McWhalen",
+    comoDerrotar: "Use Duff McWhalen para tirar vantagem da gravidade."
+  },
+  {
+    nome: "Oboro",
+    jogo: "Mega Man X5",
+    historia: "Maverick que usa ataques rápidos e invisibilidade.",
+    pontoFraco: "Arma: Gravity Antonion",
+    comoDerrotar: "Use Gravity Antonion para revelar seus ataques."
+  },
+  {
+    nome: "Kangaroo Joe",
+    jogo: "Mega Man X5",
+    historia: "Maverick com ataques rápidos e saltos poderosos.",
+    pontoFraco: "Arma: Oboro",
+    comoDerrotar: "Use Oboro para atacar durante seus saltos."
+  },
+  {
+    nome: "Squid Adler",
+    jogo: "Mega Man X5",
+    historia: "Maverick aquático com ataques fortes e rápidos.",
+    pontoFraco: "Arma: Kangaroo Joe",
+    comoDerrotar: "Use Kangaroo Joe para se proteger e atacar."
+  },
+
+  // Mega Man X6 (2001)
+  {
+    nome: "Gate",
+    jogo: "Mega Man X6",
+    historia: "Maverick que usa ataques de escudos e escamas.",
+    pontoFraco: "Arma: Blizzard Buffalo",
+    comoDerrotar: "Use o Blizzard Buffalo para quebrar sua defesa."
+  },
+  {
+    nome: "Blizzard Buffalo",
+    jogo: "Mega Man X6",
+    historia: "Maverick que lança rajadas de gelo e usa força bruta.",
+    pontoFraco: "Arma: Flame Stag",
+    comoDerrotar: "Use o Flame Stag para derreter seu gelo."
+  },
+  {
+    nome: "Flame Stag",
+    jogo: "Mega Man X6",
+    historia: "Maverick que controla fogo e ataques rápidos.",
+    pontoFraco: "Arma: Gate",
+    comoDerrotar: "Use Gate para explorar suas fraquezas."
+  },
+  {
+    nome: "Metal Shark Player",
+    jogo: "Mega Man X6",
+    historia: "Maverick aquático com ataques velozes e precisos.",
+    pontoFraco: "Arma: Blizzard Buffalo",
+    comoDerrotar: "Use o Blizzard Buffalo para congelá-lo."
+  },
+  {
+    nome: "Magnus Centipede",
+    jogo: "Mega Man X6",
+    historia: "Maverick com ataques segmentados e venenosos.",
+    pontoFraco: "Arma: Metal Shark Player",
+    comoDerrotar: "Use Metal Shark Player para atacar segmentos."
+  },
+  {
+    nome: "Piledriver",
+    jogo: "Mega Man X6",
+    historia: "Maverick que usa ataques poderosos de impacto.",
+    pontoFraco: "Arma: Piledriver",
+    comoDerrotar: "Use suas armas especiais para parar seus ataques."
+  },
+  {
+    nome: "Puppet King",
+    jogo: "Mega Man X6",
+    historia: "Maverick que controla marionetes e ataques precisos.",
+    pontoFraco: "Arma: Piledriver",
+    comoDerrotar: "Use Piledriver para atacar seus pontos fracos."
+  },
+  {
+    nome: "Undernet Yeti",
+    jogo: "Mega Man X6",
+    historia: "Maverick que usa ataques de gelo e força física.",
+    pontoFraco: "Arma: Puppet King",
+    comoDerrotar: "Use Puppet King para explorar fraquezas."
+  },
+
+  // Mega Man X7 (2003)
+  {
+    nome: "Red Heat",
+    jogo: "Mega Man X7",
+    historia: "Maverick que usa ataques de fogo e calor extremo.",
+    pontoFraco: "Arma: Slash Beast",
+    comoDerrotar: "Use Slash Beast para extinguir seu fogo."
+  },
+  {
+    nome: "Squid Adler",
+    jogo: "Mega Man X7",
+    historia: "Maverick aquático e chefe do jogo.",
+    pontoFraco: "Arma: Red Heat",
+    comoDerrotar: "Use Red Heat para contra-atacar."
+  },
+  {
+    nome: "Slash Beast",
+    jogo: "Mega Man X7",
+    historia: "Maverick com lâminas afiadas e ataques rápidos.",
+    pontoFraco: "Arma: Red Heat",
+    comoDerrotar: "Use Red Heat para parar seus ataques."
+  },
+  {
+    nome: "Fang, Sprint, and Shield",
+    jogo: "Mega Man X7",
+    historia: "Trio de Mavericks que atacam em conjunto.",
+    pontoFraco: "Arma: Red Heat",
+    comoDerrotar: "Use Red Heat para dividir e conquistar."
+  },
+
+  // Mega Man X8 (2004)
+  {
+    nome: "Cyber Peacock",
+    jogo: "Mega Man X8",
+    historia: "Maverick que lança penas explosivas e ataques rápidos.",
+    pontoFraco: "Arma: Jet Stingray",
+    comoDerrotar: "Use Jet Stingray para atacar suas penas."
+  },
+  {
+    nome: "Jet Stingray",
+    jogo: "Mega Man X8",
+    historia: "Maverick aquático que ataca com velocidade e jatos.",
+    pontoFraco: "Arma: Cyber Peacock",
+    comoDerrotar: "Use Cyber Peacock para neutralizar seus ataques."
+  },
+  {
+    nome: "Dynamo",
+    jogo: "Mega Man X8",
+    historia: "Maverick com habilidades elétricas e ataques ágeis.",
+    pontoFraco: "Arma: Slash Beast",
+    comoDerrotar: "Use Slash Beast para pará-lo."
+  },
+  {
+    nome: "Fang",
+    jogo: "Mega Man X8",
+    historia: "Maverick que usa ataques de garra e velocidade.",
+    pontoFraco: "Arma: Dynamo",
+    comoDerrotar: "Use Dynamo para contra-atacar."
+  },
+  {
+    nome: "Sprint",
+    jogo: "Mega Man X8",
+    historia: "Maverick rápido que usa ataques de velocidade.",
+    pontoFraco: "Arma: Fang",
+    comoDerrotar: "Use Fang para surpreendê-lo."
+  },
+  {
+    nome: "Shield",
+    jogo: "Mega Man X8",
+    historia: "Maverick blindado que defende ataques com escudo.",
+    pontoFraco: "Arma: Sprint",
+    comoDerrotar: "Use Sprint para atacar suas aberturas."
   }
+
+
 
 
     ];
